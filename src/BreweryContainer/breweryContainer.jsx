@@ -85,7 +85,7 @@ class BreweryContainer extends Component {
 
     getBreweries = async () => {
 
-        const breweries = await fetch('http://localhost:8000/api/breweries/');
+        const breweries = await fetch('https://brew--review.herokuapp.com/api/breweries/');
         const breweriesJson = await breweries.json();
         return breweriesJson;
     }
@@ -94,7 +94,7 @@ class BreweryContainer extends Component {
         e.preventDefault();
         
         try {
-            const createdBrewery = await fetch('http://localhost:8000/api/breweries/', {
+            const createdBrewery = await fetch('https://brew--review.herokuapp.com/api/breweries/', {
                 method: 'POST',
                 body: JSON.stringify(brewery),
                 headers: {
@@ -114,7 +114,7 @@ class BreweryContainer extends Component {
         e.preventDefault();
         console.log('deleteBrewery function is being called, this is the id: ', id);
         try {
-            const deleteBrewery = await fetch('http://localhost:8000/api/breweries/' + id, {
+            const deleteBrewery = await fetch('https://brew--review.herokuapp.com/api/breweries/' + id, {
                 method: 'DELETE',
             });
 
@@ -143,7 +143,7 @@ class BreweryContainer extends Component {
 
         try {
             console.log('trying to edit brewery!!!');
-            const editResponse = await fetch('http://localhost:8000/api/breweries/' + this.state.editBreweryId, {
+            const editResponse = await fetch('https://brew--review.herokuapp.com/api/breweries/' + this.state.editBreweryId, {
                 method: 'PUT',
                 body: JSON.stringify(this.state.breweryToEdit),
                 headers: {
@@ -185,7 +185,7 @@ class BreweryContainer extends Component {
 
     getReviews = async () => {
 
-        const reviews = await fetch('http://localhost:8000/api/reviews/');
+        const reviews = await fetch('https://brew--review.herokuapp.com/api/reviews/');
         const reviewsJson = await reviews.json();
         return reviewsJson;
     }
@@ -194,7 +194,7 @@ class BreweryContainer extends Component {
         e.preventDefault();
 
         try {
-            const createdReview = await fetch('http://localhost:8000/api/reviews/', {
+            const createdReview = await fetch('https://brew--review.herokuapp.com/api/reviews/', {
                 method: 'POST',
                 body: JSON.stringify(review),
                 headers: {
@@ -214,7 +214,7 @@ class BreweryContainer extends Component {
         e.preventDefault();
         console.log('deleteReview function is being called, this is the id: ', id);
         try {
-            const deleteReview = await fetch('http://localhost:8000/api/reviews/' + id, {
+            const deleteReview = await fetch('https://brew--review.herokuapp.com/api/reviews/' + id, {
                 method: 'DELETE',
             });
 
@@ -243,7 +243,7 @@ class BreweryContainer extends Component {
 
         try {
             console.log('trying to edit review!!!');
-            const editReview = await fetch('http://localhost:8000/api/reviews/' + this.state.editReviewId, {
+            const editReview = await fetch('https://brew--review.herokuapp.com/api/reviews/' + this.state.editReviewId, {
                 method: 'PUT',
                 body: JSON.stringify(this.state.reviewToEdit),
                 headers: {
