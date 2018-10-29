@@ -29,7 +29,7 @@ SECRET_KEY = '1f@gvld9+llgngpr7z+-vg1#u9@2o4uuia1-*a%y+xi^#p)cn8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brew--review.herokupapp.com']
 
 
 # Application definition
