@@ -1,0 +1,12 @@
+/node_modules
+/coverage
+/build
+/staticfiles
+/.vscode
+
+*.pyc
+*.sqlite3
+package-lock.json
+
+.DS_Store
+.env
