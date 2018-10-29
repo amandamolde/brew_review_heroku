@@ -35,7 +35,7 @@ const BreweryList = (props) => {
                         <Modal isOpen={props.addReviewModal} toggle={props.addReviewToggle}>
                             <ModalHeader toggle={props.addReviewToggle}>Add a review of {props.breweryToReviewName}:</ModalHeader>
                             <ModalBody>
-                                <CreateReview breweryId={'http://localhost:8000/api/breweries/' + props.breweryToReviewId} addReview={props.addReview} addReviewToggle={props.addReviewToggle}/>
+                                <CreateReview breweryId={'https://brew--review.herokuapp.com/api/breweries/' + props.breweryToReviewId} addReview={props.addReview} addReviewToggle={props.addReviewToggle}/>
                             </ModalBody>
                         </Modal>
                         <hr/>

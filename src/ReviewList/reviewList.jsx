@@ -6,7 +6,7 @@ import EditReview from '../EditReview/editReview';
 const ReviewList = (props) => {
     // console.log(props.breweryId, ' this is breweryID at ReviewList');
 
-    let apiBreweryId = 'http://localhost:8000/api/breweries/' + props.breweryId;
+    let apiBreweryId = 'https://brew--review.herokuapp.com/api/breweries/' + props.breweryId;
     
     const reviewList = props.reviews.map((review, i) => {
         // console.log(review.brewery, ' this is review.brewery')
