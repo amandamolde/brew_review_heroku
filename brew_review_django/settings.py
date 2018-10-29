@@ -90,14 +90,15 @@ WSGI_APPLICATION = 'brew_review_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'brew_review',
-        'USER': 'reviewuser',
-        'PASSWORD': 'brews',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'daf4v7ld4ib479',
+        'HOST': 'ec2-23-23-153-145.compute-1.amazonaws.com',
+        'DATABASE': 'daf4v7ld4ib479',
+        'USER': 'vgdombeyptkiyt',
+        'PORT': '5432',
+        'PASSWORD': 'ad493e530e1997fe6b737639cc9e07f43feb96f6ef4eda12ab296d1647770e0a',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
