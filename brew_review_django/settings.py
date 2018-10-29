@@ -29,7 +29,7 @@ SECRET_KEY = '1f@gvld9+llgngpr7z+-vg1#u9@2o4uuia1-*a%y+xi^#p)cn8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['brew--review.herokupapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['brew--review.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
